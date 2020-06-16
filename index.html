@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://harripeltola.github.io/popup.widget.css"
+      rel="stylesheet"
+    />
+    <script src="https://harripeltola.github.io/popup.widget.js"></script>
     <title>TEST</title>
   </head>
   <body>
     <h1>Testing</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ut
+      explicabo consequatur excepturi aspernatur voluptatem ad natus mollitia
+      impedit. Commodi quis cum doloribus rem autem earum. Hic saepe ducimus
+      ullam.
+    </p>
+    <script>
+      qwidget.popup.init({
+        message:
+          "What do you think about My blog? Share your opinion with us in our quick and fun experimental survey",
+        btnYesTitle: "Yes, take the survey now",
+        btnNoTitle: "No thanks",
+        redirectUrl: "http://google.com",
+        timeout: 30000,
+      });
+    </script>
   </body>
 </html>
